@@ -20,6 +20,9 @@ body {
   stroke-width: 4px;
   stroke-linecap: round;
 }
+.figure-part {
+  display: none;
+}
 body > p {
   margin: 30px 0;
 }
@@ -42,13 +45,24 @@ body > p {
 .wrong span {
   font-size: 1.3rem;
 }
+.word-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
+}
 .word {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .letter {
   font-size: 1.7rem;
-  border-bottom: 1px solid chocolate;
+  border-bottom: 2px solid rgb(238, 195, 6);
   margin: 0 5px;
+  display: inline-flex;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .popup-container {
@@ -65,7 +79,7 @@ body > p {
 
 .popup {
   background: #fff;
-  width: 300px;
+  /* width: 300px;s */
   text-align: center;
   border-radius: 5px;
   color: #000;
